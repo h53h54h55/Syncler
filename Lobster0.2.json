@@ -1,0 +1,173 @@
+{
+  "_manifest" : {
+    "name": "Lobster - Unified",
+    "id": "lob.unified",
+    "version": 1.0,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/itzAki07/scraper/main/scraper.json"
+  },
+  "thepiratebayjson": {
+        "name": "Lobster-PIRATE",
+        "enabled": true,
+        "languages": ["en"],
+        "base_url": "https://apibay.org",
+        "fallback_urls": [],
+        "response_type": "json",
+        "movie": {
+            "query": "/q.php?q={query}&cat=207,202,201",
+            "keywords": "{title} {year}"
+        },
+        "episode": {
+            "query": "/q.php?q={query}&cat=208,205",
+            "keywords": ["{title} {episodeCode}"]
+        },
+        "season": {
+            "query": "/q.php?q={query}&cat=208,205",
+            "keywords": ["{title} {seasonCode}", "{title} season"]
+        },
+        "json_format": {
+            "title": "name",
+            "seeds": "seeders",
+            "peers": "leechers",
+            "size": "size",
+            "hash": "info_hash"
+        },
+        "title_replacement": {
+            "'s": "s",
+            "\"": ""
+        }
+    },
+"thepiratebaytext": {
+    "base_url": "https://pirateproxy.live",
+    "enabled": true,
+    "episode": {
+      "keywords": [
+        "{title} {episodeCode}",
+        "{title} {season}"
+      ],
+      "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+    },
+    "fallback_urls": [
+      "https://thepiratebay.org",
+      "https://thepiratebay.fun",
+      "https://thepiratebay.asia",
+      "https://tpb.party",
+      "https://thepiratebay3.org",
+      "https://thepiratebayz.org",
+      "https://thehiddenbay.com",
+      "https://piratebay.live",
+      "https://thepiratebay.zone"
+    ],
+    "html_parser": {
+      "peers": "row.querySelector('td:nth-child(4)') ? row.querySelector('td:nth-child(4)').textContent : ''",
+      "row": "doc.querySelectorAll('tbody tr')",
+      "seeds": "row.querySelector('td:nth-child(3)') ? row.querySelector('td:nth-child(3)').textContent : ''",
+      "size": "row.querySelector('font') ? row.querySelector('font').textContent.split(',')[1].replace(/size/i,'') : ''",
+      "title": "row.querySelector('div') ? row.querySelector('div').textContent : ''",
+      "url": "row.querySelector('td:nth-child(2) a:nth-child(2)') ? row.querySelector('td:nth-child(2) a:nth-child(2)').getAttribute('href') : ''"
+    },
+    "languages": [
+      "en"
+    ],
+    "movie": {
+      "keywords": "{title} {year}",
+      "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+    },
+    "name": "Lobster-TPBAY",
+    "response_type": "text",
+    "season": {
+      "keywords": [
+        "{title} {seasonCode}"
+      ],
+      "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+    },
+    "title_replacement": {
+      "\"": "",
+      "'s": "s"
+    }
+  },
+"eztv": {
+    "base_url": "https://eztv.io",
+    "enabled": true,
+    "episode": {
+      "keywords": "{title} {episodeCode}",
+      "query": "/search/{query}"
+    },
+    "fallback_urls": [
+      "https://eztv.re",
+      "https://eztv.ag",
+      "https://eztv.it",
+      "https://eztv.ch",
+      "https://eztv.unblocked.llc",
+      "https://eztv.unblocker.cc"
+    ],
+    "html_parser": {
+      "peers": "row.querySelector('td:nth-child(6)').textContent",
+      "row": "doc.querySelectorAll('tr.forum_header_border')",
+      "seeds": "row.querySelector('td:nth-child(6)').textContent",
+      "size": "row.querySelector('td:nth-child(4)').textContent",
+      "title": "row.querySelector('td:nth-child(2)').textContent",
+      "url": "row.querySelector('td:nth-child(3) a').getAttribute('href')"
+    },
+    "languages": [
+      "en"
+    ],
+    "name": "Lobster-EZTV",
+    "response_type": "text",
+    "season": {
+      "keywords": "{title} {seasonCode}",
+      "query": "/search/{query}"
+    },
+    "title_replacement": {
+      "\"": "",
+      "'s": "s"
+    }
+  },
+    "torrentapi": {
+        "name": "Lobster-TORPAPI",
+        "enabled": true,
+        "languages": [
+            "en"
+        ],
+        "base_url": "https://torrentapi.org",
+        "fallback_urls": [],
+        "response_type": "json",
+        "time_to_wait_between_each_request_ms": 300,
+        "time_to_wait_on_too_many_request_ms": 2000,
+        "trust_results": true,
+        "token": {
+            "query": "/pubapi_v2.php?get_token=get_token&app_id=syncler",
+            "token_validity_time_ms": 840000,
+            "token_format": {
+                "token": "token"
+            }
+        },
+        "movie": {
+            "query": "/pubapi_v2.php?mode=search&search_imdb={query}&category=movies&format=json_extended&app_id=syncler&token={token}",
+            "keywords": "{imdbId}"
+        },
+        "episode": {
+            "query": "/pubapi_v2.php?mode=search&search_string={query}&category=tv&format=json_extended&app_id=syncler&token={token}",
+            "keywords": "{title} {episodeCode}"
+        },
+        "season": {
+            "query": "/pubapi_v2.php?mode=search&search_string={query}&category=tv&format=json_extended&app_id=syncler&token={token}",
+            "keywords": [
+                "{title} {seasonCode}",
+                "{title} season"
+            ]
+        },
+        "json_format": {
+            "results": "torrent_results",
+            "url": "download",
+            "title": "title",
+            "seeds": "seeders",
+            "peers": "leechers",
+            "size": "size"
+        },
+        "title_replacement": {
+            "'s": "s",
+            "\"": ""
+        }
+    }
+}
