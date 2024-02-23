@@ -19,33 +19,33 @@ Sites are utilized in the following order.  All returned results are prefixed 'L
 
 Ensure you have ENABLE SOURCE CACHE set to ON with cache.bouncy.cc as the Source Cache Host. 
 
-https://apibay.org
-https://pirateproxy.live (includes many fallbacks and derivitives)
-https://eztv.io
-https://www.magnetdl.com
-https://torrentapi.org
-https://1337x.to
-https://glodls.to
-https://thekat.app
+apibay.org
+pirateproxy.live (includes many fallbacks and derivitives)
+eztv.io
+magnetdl.com
+torrentapi.org
+1337x.to
+glodls.to
+thekat.app
 zooqle.com
-https://solidtorrents.net
-https://torrentgalaxy.org
-https://www.torrentdownloads.me
-https://www.torrentdownload.info
-http://pirateiro.com
-https://www.skytorrents.to
-https://ww1.torrent9.to
-https://yourbittorrent.com
-https://extratorrent.st
-https://yts.mx
-https://bitsearch.to
-https://www.limetorrents.info
-https://bitlordsearch.com
-https://btdb.eu
-http://ilcorsaronero.ch
-https://www.oxtorrent.com
-http://rutor.info
-https://www.torlock.com
-http://7torr.com
-https://nyaa.si
-https://www.anirena.com
+solidtorrents.net
+torrentgalaxy.org
+torrentdownloads.me
+torrentdownload.info
+pirateiro.com
+skytorrents.to
+torrent9.to
+yourbittorrent.com
+extratorrent.st
+yts.mx
+bitsearch.to
+limetorrents.info
+bitlordsearch.com
+btdb.eu
+ilcorsaronero.ch
+oxtorrent.com
+rutor.info
+torlock.com
+7torr.com
+nyaa.si
+anirena.com
