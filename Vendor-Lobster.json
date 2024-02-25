@@ -6,7 +6,7 @@
     "website": "https://github.com/h53h54h55/Syncler/blob/main/README.md",
     "packages": [
         {
-            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobster.json",
+            "manifest": "https:\/\/raw.githubusercontent.com\/h53h54h55\/Syncler\/main\/Lobster.json?mode=manifest",
             "description": "A Comprehensive set of over 30 source providers"
         }
     ],
@@ -15,10 +15,8 @@
     ],
     "defaults": {
         "packages": [
-            "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobster.json"
+            "https:\/\/raw.githubusercontent.com\/h53h54h55\/Syncler\/main\/Lobster.json?mode=manifest"
         ],
         "cacheServer": "cache.bouncy.cc"
     }
 }
-
-
