@@ -51,3 +51,12 @@ Sites are searched by Syncler in the following priority.  All returned results a
 29) nyaa.si
 30) anirena.com
 
+SYNCLER V2 / BETA
+
+For the upcoming / new installation process with V2 you will need a vendor URL.  this URL replaces the need to add packages and caches directly in the app (although you could still do that if you skipped the add URL step).
+
+When asked for a URL use
+
+bit.ly/vendor-lobster
+
+This will install the exact same vendor list as in the existing Lobster file (30+ sources).
