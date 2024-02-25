@@ -4,7 +4,8 @@
     "id": "lob.unified",
     "version": 1.0,
     "classPath": "",
-    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobster.json"
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobster.json",
+    "type":"express"
   },
   "thepiratebayjson": {
         "name": "Lobster-PIRATE",
