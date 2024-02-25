@@ -1,0 +1,24 @@
+{
+    "name": "Lobster",
+    "description": "A Syncler vendor URL",
+    "tutorial": "https://github.com/h53h54h55/Syncler/blob/main/README.md",
+    "support": "https://github.com/h53h54h55/Syncler/blob/main/README.md",
+    "website": "https://github.com/h53h54h55/Syncler/blob/main/README.md",
+    "packages": [
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobster.json",
+            "description": "A Comprehensive set of over 30 source providers"
+        }
+    ],
+    "cacheServers": [
+        "cache.bouncy.cc"
+    ],
+    "defaults": {
+        "packages": [
+            "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobster.json"
+        ],
+        "cacheServer": "cache.bouncy.cc"
+    }
+}
+
+
