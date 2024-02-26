@@ -1,14 +1,13 @@
 {
   "_manifest" : {
-    "name": "Lobster - 1.0",
-    "id": "lob.unified",
+    "name": "Lobster - Express",
+    "id": "lob.express",
     "version": 1.0,
     "classPath": "",
-    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobster.json",
-    "type":"express"
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobster.json"
   },
   "thepiratebayjson": {
-        "name": "Lobster-PIRATE",
+        "name": "PIRATE-Lobster",
         "enabled": true,
         "languages": ["en"],
         "base_url": "https://apibay.org",
@@ -74,7 +73,7 @@
       "keywords": "{title} {year}",
       "query": "/s/?q={query}&page=0&&video=on&orderby=99"
     },
-    "name": "Lobster-TPBAY",
+    "name": "TPBAY-Lobster",
     "response_type": "text",
     "season": {
       "keywords": [
@@ -113,7 +112,7 @@
     "languages": [
       "en"
     ],
-    "name": "Lobster-EZTV",
+    "name": "EZTV-Lobster",
     "response_type": "text",
     "season": {
       "keywords": "{title} {seasonCode}",
@@ -125,7 +124,7 @@
     }
   },
 "magnetdl": {
-        "name": "Lobster-MAGDL",
+        "name": "MAGDL-Lobster",
         "enabled": true,
         "languages": ["en"],
         "base_url": "https://www.magnetdl.com",
@@ -158,7 +157,7 @@
         }
     },
     "torrentapi": {
-        "name": "Lobster-TORPAPI",
+        "name": "TORPAPI-Lobster",
         "enabled": true,
         "languages": [
             "en"
@@ -205,7 +204,7 @@
         }
     },
     "_1337x": {
-        "name": "Lobster-1337X",
+        "name": "1337X-Lobster",
         "enabled": true,
         "languages": [
           "en"
@@ -258,7 +257,7 @@
         }
       },
     "glodls": {
-            "name": "Lobster-GLODLS",
+            "name": "GLODLS-Lobster",
             "enabled": true,
             "languages": ["en"],
             "base_url": "https://glodls.to",
@@ -293,7 +292,7 @@
             }
         },
     "kickass": {
-            "name": "Lobster-KICK",
+            "name": "KICK-Lobster",
             "enabled": true,
             "languages": ["en"],
             "base_url": "https://thekat.app",
@@ -331,7 +330,7 @@
             }
         },
     "zooqle": {
-            "name": "Lobster-ZOOQLE",
+            "name": "ZOOQLE-Lobster",
             "enabled": true,
             "languages": ["en"],
             "base_url": "https://zooqle.com",
@@ -379,7 +378,7 @@
             }
         },
     "solidtorrents": {
-       "name": "Lobster-SOLID",
+       "name": "SOLID-Lobster",
        "enabled": true,
        "languages": [
          "en"
@@ -421,7 +420,7 @@
        }
      },
     "torrentgalaxy": {
-            "name": "Lobster-GALAXY",
+            "name": "GALAXY-Lobster",
             "enabled": true,
             "languages": ["en"],
             "base_url": "https://torrentgalaxy.org",
@@ -460,7 +459,7 @@
             }
         },
     "torrentdownloads": {
-            "name": "Lobster-TORDS",
+            "name": "TORDS-Lobster",
             "enabled": true,
             "languages": ["en"],
             "base_url": "https://www.torrentdownloads.me",
@@ -500,7 +499,7 @@
             }
         },
         "torrentdownload": {
-            "name": "Lobster-TORLD",
+            "name": "TORLD-Lobster",
             "enabled": true,
             "languages": ["en"],
             "base_url": "https://www.torrentdownload.info",
@@ -539,7 +538,7 @@
             }
         },
         "pirateiro": {
-           "name": "Lobster-PIRO",
+           "name": "PIRO-Lobster",
            "enabled": true,
            "languages": [
              "en"
@@ -579,7 +578,7 @@
            "source_is_in_sub_page": false
          },
         "skytorrents": {
-           "name": "Lobster-SKYTOR",
+           "name": "SKYTOR-Lobster",
            "enabled": true,
            "languages": [
              "en"
@@ -634,16 +633,16 @@
              "url": "'https://ww1.torrent9.to'+row.querySelector('td:nth-child(1) a').getAttribute('href')"
            },
            "languages": [
-             "fr"
+             "en"
            ],
            "movie": {
              "keywords": [
-               "{title.fr}",
+               "{title.en}",
                "{title}"
              ],
              "query": "/search_torrent/{query}.html"
            },
-           "name": "Lobster-TOR9",
+           "name": "TOR9-Lobster",
            "response_type": "text",
            "season": {
              "keywords": "{title} {seasonCode}",
@@ -684,7 +683,7 @@
              "keywords": "{title} {year}",
              "query": "/?v=&c=1&q={query}"
            },
-           "name": "Lobster-YOURBT",
+           "name": "YOURBT-Lobster",
            "response_type": "text",
            "season": {
              "keywords": "{title} {seasonCode}",
@@ -698,7 +697,7 @@
            }
          },
         "extratorrents": {
-               "name": "Lobster-EXTRA",
+               "name": "EXTRA-Lobster",
                "enabled": true,
                "languages": [
                    "en"
@@ -756,7 +755,7 @@
                }
            },
            "yts": {
-               "name": "Lobster-YTS",
+               "name": "YTS-Lobster",
                "enabled": true,
                "languages": [
                    "en"
@@ -793,7 +792,7 @@
                }
            },
            "bitsearch": {
-                  "name": "Lobster-SEARCH",
+                  "name": "SEARCH-Lobster",
                   "enabled": true,
                   "languages": [
                       "en"
@@ -847,7 +846,7 @@
                   }
               },
            "limetorrents": {
-                   "name": "Lobster-LIME",
+                   "name": "LIME-Lobster",
                    "enabled": true,
                    "languages": ["en"],
                    "base_url": "https://www.limetorrents.info",
@@ -887,7 +886,7 @@
                    }
                },
            "bitlord": {
-                   "name": "Lobster-BITLORD",
+                   "name": "BITLORD-Lobster",
                    "enabled": true,
                    "languages": ["en"],
                    "base_url": "https://bitlordsearch.com",
@@ -924,7 +923,7 @@
                    }
                },
            "ilcorsaronero": {
-                   "name": "Lobster-NERO",
+                   "name": "NERO-Lobster",
                    "enabled": false,
                    "languages": ["it"],
                    "base_url": "http://ilcorsaronero.ch",
@@ -956,7 +955,7 @@
                    }
                },
            "btdb": {
-              "name": "Lobster-BITDB",
+              "name": "BITDB-Lobster",
               "enabled": true,
               "languages": [
                 "en"
@@ -1021,13 +1020,13 @@
                 "url": "row.querySelector('a:nth-child(2)').getAttribute('href')"
               },
               "languages": [
-                "fr"
+                "en"
               ],
               "movie": {
                 "keywords": "{title} {year}",
                 "query": "/recherche/{query}"
               },
-              "name": "Lobster-OXTOR",
+              "name": "OXTOR-Lobster",
               "response_type": "text",
               "season": {
                 "keywords": [
@@ -1044,7 +1043,7 @@
               }
             },
            "rutor": {
-               "name": "Lobster-RUTOR",
+               "name": "RUTOR-Lobster",
                "enabled": true,
                "languages": [
                  "ru"
@@ -1069,7 +1068,7 @@
                }
              },
            "Torlock": {
-                  "name": "Lobster-TORLOC",
+                  "name": "TORLOC-Lobster",
                   "enabled": true,
                   "languages": [
                       "en"
@@ -1126,7 +1125,7 @@
                   }
               },
            "7torr": {
-                  "name": "Lobster-7TORR",
+                  "name": "7TORR-Lobster",
                   "enabled": true,
                   "languages": [
                       "en"
@@ -1183,7 +1182,7 @@
                   }
               },
            "nyaa": {
-                 "name": "Lobster-NYAA",
+                 "name": "NYAA-Lobster",
                  "enabled": true,
                  "languages": [
                      "en"
@@ -1233,7 +1232,7 @@
                  }
              },
            "anirena": {
-                "name": "Lobster-RENA",
+                "name": "RENA-Lobster",
                 "enabled": true,
                 "languages": [
                     "en"
