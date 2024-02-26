@@ -1,7 +1,7 @@
 {
-  "name": "OpenScrapers - Express",
-  "id": "openscraper.express",
-  "version": 6,
-  "url": "https://raw.githubusercontent.com/SynclerScrapers/OpenScrapers/main/express/openscraper.json",
+  "name": "Lobster - Express",
+  "id": "lob.express",
+  "version": 1.0,
+  "url": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobster.json",
   "type": "express"
 }
