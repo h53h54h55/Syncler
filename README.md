@@ -22,7 +22,7 @@ Sites are searched by Syncler in the following priority.  All returned results a
 
 1) apibay.org
 2) pirateproxy.live (includes many fallbacks and derivitives)
-3) eztv.io
+3) eztv.io - updated, .io extension has been depleted - defualt is now .to
 4) magnetdl.com
 5) torrentapi.org
 6) 1337x.to
