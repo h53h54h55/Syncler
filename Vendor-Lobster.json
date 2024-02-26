@@ -1,1 +1,22 @@
-{"name":"Lobster","description":"A Syncler vendor URL","website":"https:\/\/raw.githubusercontent.com\/h53h54h55\/Syncler","tutorial":"https:\/\/raw.githubusercontent.com\/h53h54h55\/Syncler","support":"https:\/\/raw.githubusercontent.com\/h53h54h55\/Syncler","packages":[{"manifest":"https:\/\/raw.githubusercontent.com\/h53h54h55\/Syncler\/main\/Lobster.json?mode=manifest","description":"A Comprehensive set of over 30 source providers"}],"cacheServers":["cache.bouncy.cc"],"defaults":{"packages":["https:\/\/raw.githubusercontent.com\/h53h54h55\/Syncler\/main\/Lobster.json?mode=manifest"],"cacheServer":"cache.bouncy.cc"}}
+{
+    "name": "Lobster",
+    "description": "Over 30 external providers focused on English language and non-anime content",
+    "tutorial": "https://raw.githubusercontent.com/h53h54h55/Syncler",
+    "support": "https://raw.githubusercontent.com/h53h54h55/Syncler",
+    "website": "https://raw.githubusercontent.com/h53h54h55/Syncler",
+    "packages": [
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobster.json",
+            "description": "Express provider for Syncler by Lobster. It contains all the sources you will need in one package. Use this package on its own."
+        }
+    ],
+    "cacheServers": [
+        "cache.bouncy.cc"
+    ],
+    "defaults": {
+        "packages": [
+            "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobster.json"
+        ],
+        "cacheServer": "cache.bouncy.cc"
+    }
+}
