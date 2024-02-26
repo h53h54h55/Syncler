@@ -34,29 +34,29 @@ Sites are searched by Syncler in the following priority.  All returned results a
 12) torrentdownloads.me
 13) torrentdownload.info
 14) pirateiro.com
-15) skytorrents.to
-16) torrent9.to
+15) skytorrents.to - Removed as site was taken down and proxys have trackers
+16) torrent9.to - Removed, only has French content
 17) yourbittorrent.com
 18) extratorrent.st
 19) yts.mx
 20) bitsearch.to
 21) limetorrents.info
 22) bitlordsearch.com
-23) btdb.eu
-24) ilcorsaronero.ch
-25) oxtorrent.com
-26) rutor.info
-27) torlock.com
-28) 7torr.com
-29) nyaa.si
-30) anirena.com
+23) btdb.eu - bit torrent main site closed (.io) and now .eu site isnt returning results
+24) ilcorsaronero.ch - Removed, only Italian links.  Site is now redirected to lagazzettadelcorsaro.com (but lots of trackers)
+25) oxtorrent.com - Removed, only French links.  Base URL (.com) no longer works and redirected to .wf
+26) rutor.info - Removed, Russion links only
+27) torlock.com - Removed, mainly Anime
+28) 7torr.com - Removed, site closed - transferred to WatchSoMuch (glitchy site with trackers)
+29) nyaa.si - Removed, mainly Anime
+30) anirena.com - Removed, mainly Anime
 
 SYNCLER V2 / BETA
 
-For the upcoming / new installation process with V2 you will need a vendor URL.  this URL replaces the need to add packages and caches directly in the app (although you could still do that if you skipped the add URL step).
+For the upcoming / new installation process with V2 you will need a vendor URL.  This URL replaces the need to add packages and caches directly in the app.
 
 When asked for a URL use
 
-bit.ly/vendor-lobster
+bit.ly/syncler-lobster
 
-This will install the exact same vendor list as in the existing Lobster file (30+ sources).
+This will install the exact same vendor list as in the existing Lobster file (20+ sources).
