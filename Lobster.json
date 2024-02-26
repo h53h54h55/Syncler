@@ -743,13 +743,6 @@
                           "{title} {year} season"
                       ]
                   },
-                  "anime": {
-                      "query": "/search?q={query}&sort=seeders",
-                      "keywords": [
-                          "{title} {absoluteNumber}",
-                          "{title} {episode}"
-                      ]
-                  },
                   "html_parser": {
                       "row": "doc.querySelectorAll('.search-result')",
                       "title": "row.querySelector('.title a').textContent",
