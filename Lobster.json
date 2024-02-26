@@ -237,10 +237,6 @@
             "{title} season"
           ]
         },
-        "anime": {
-          "query": "/category-search/{query}/Anime/1/",
-          "keywords": "{title} {episode}"
-        },
         "separator": "+",
         "html_parser": {
           "row": "doc.querySelectorAll('tbody > tr')",
@@ -310,10 +306,6 @@
                 "query": "/usearch/{query}%20category:tv/",
                 "keywords": ["{title} {seasonCode}", "{title} season"]
             },
-            "anime": {
-                "query": "/usearch/{query}",
-                "keywords": "{title} {absoluteNumber}"
-            },
             "html_parser": {
                 "row": "doc.querySelectorAll('table:nth-child(2) tbody tr:not(.firstr)')",
                 "title": "row.querySelector('.cellMainLink').textContent",
@@ -357,10 +349,6 @@
                 "query": "/search?q={query}",
                 "keywords": ["{title} {seasonCode}", "{title} season"]
             },
-            "anime": {
-                "query": "/search?q={query}",
-                "keywords": "{title} {absoluteNumber}"
-            },
             "html_parser": {
                 "row": "doc.querySelectorAll('.table-torrents tbody tr')",
                 "title": "row.querySelector('a').textContent",
@@ -400,10 +388,6 @@
            "{title} season"
          ]
        },
-       "anime": {
-         "query": "",
-         "keywords": "{title} {absoluteNumber}"
-       },
        "json_format": {
          "results": "results",
          "url": "magnet",
@@ -438,10 +422,6 @@
             "season": {
                 "query": "/torrents.php?c41=1&c5=1&c6=1&c7=1&search={query}&lang=0&nox=2",
                 "keywords": ["{title} {seasonCode}", "{title} season"]
-            },
-            "anime": {
-                "query": "/torrents.php?c28=1&search={query}&lang=0&nox=2",
-                "keywords": "{title} {absoluteNumber}"
             },
             "html_parser": {
                 "row": "doc.querySelectorAll('.tgxtable .tgxtablerow')",
@@ -479,10 +459,6 @@
                 "query": "/search/?search={query}",
                 "keywords": ["{title} {seasonCode}", "{title} season"]
             },
-            "anime": {
-                "query": "/search/?search={query}",
-                "keywords": "{title} {absoluteNumber}"
-            },
             "html_parser": {
                 "row": "doc.querySelectorAll('.inner_container')[1].querySelectorAll('.grey_bar3')",
                 "title": "row.querySelector('p a').textContent",
@@ -517,10 +493,6 @@
             "season": {
                 "query": "/search?q={query}",
                 "keywords": ["{title} {seasonCode}", "{title} season"]
-            },
-            "anime": {
-                "query": "/search?q={query}",
-                "keywords": "{title} {absoluteNumber}"
             },
             "html_parser": {
                 "row": "doc.querySelectorAll('table:nth-of-type(2) tbody tr:not(:first-child)')",
@@ -562,10 +534,6 @@
                "{title} {seasonCode}",
                "{title} season"
              ]
-           },
-           "anime": {
-             "query": "/torrents/?search={query}&c100=1&c700=1&qualityvideo=0&audiolanguage=0&subtitle=0&imdbrating=0",
-             "keywords": "{title} {absoluteNumber}"
            },
            "html_parser": {
              "row": "doc.querySelectorAll('tr.impar')",
@@ -650,13 +618,6 @@
                        "{title} season",
                        "{title} {year} {seasonCode}",
                        "{title} {year} season"
-                   ]
-               },
-               "anime": {
-                   "query": "/search/?search={query}&new=1&x=0&y=0",
-                   "keywords": [
-                       "{title} {absoluteNumber}",
-                       "{title} {episode}"
                    ]
                },
                "html_parser": {
@@ -781,10 +742,6 @@
                        "query": "/search/tv/{query}",
                        "keywords": "{title} {seasonCode}"
                    },
-                   "anime": {
-                       "query": "/search/anime/{query}",
-                       "keywords": "{title} {absoluteNumber}"
-                   },
                    "html_parser": {
                        "row": "doc.querySelectorAll('.table2 tbody tr:nth-child(n+2)')",
                        "title": "row.querySelector('.tt-name').textContent",
@@ -818,10 +775,6 @@
                    "season": {
                        "query": "/search?q={query}",
                        "keywords": ["{title} {seasonCode}", "{title} season"]
-                   },
-                   "anime": {
-                       "query": "/search?q={query}",
-                       "keywords": "{title} {absoluteNumber}"
                    },
                    "html_parser": {
                        "row": "doc.querySelectorAll('#container table tbody tr.bls-row')",
