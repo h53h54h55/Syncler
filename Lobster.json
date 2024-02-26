@@ -87,7 +87,7 @@
     }
   },
 "eztv": {
-    "base_url": "https://eztv.io",
+    "base_url": "https://eztv.to",
     "enabled": true,
     "episode": {
       "keywords": "{title} {episodeCode}",
