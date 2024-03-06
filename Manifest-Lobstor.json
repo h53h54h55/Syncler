@@ -1,7 +1,16 @@
+[
 {
-  "name": "Lobstor",
-  "id": "lob.express",
+  "name": "Lobstor Speedy",
+  "id": "lob.Speedy",
+  "version": 2,
+  "url": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobstor.json",
+  "type": "express"
+},
+{
+  "name": "Lobstor Full",
+  "id": "lob.Full",
   "version": 2,
   "url": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobstor.json",
   "type": "express"
 }
+]
