@@ -12,7 +12,7 @@ TO INSTALL
 2) This will generate a code on screen xxxx-xxxx
 3) On the web navigate to https://syncler.net/install
 4) Enter the xxxx-xxxx code into the website (including the hyphen)
-5) Enter the following URL http://tinyurl.com/syncler-lobster
+5) Enter the following URL http://tinyurl.com/syncler-lobstor
 6) Click 'Done' in Syncler when promted.
 7) You should see the package installed in Syncler (you may have to back out of settings and return)
 
