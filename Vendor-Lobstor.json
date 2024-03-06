@@ -1,13 +1,13 @@
 {
     "name": "Lobstor",
-    "description": "Over 20 external providers focused on English language and non-anime content",
+    "description": "List Of the Best Syncler TORrents",
     "tutorial": "https://raw.githubusercontent.com/h53h54h55/Syncler",
     "support": "https://raw.githubusercontent.com/h53h54h55/Syncler",
     "website": "https://www.reddit.com/r/synclervendors/comments/1b87sh4/lobstor_file_change_log",
     "packages": [
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobstor.json",
-            "description": "Express provider for Syncler by Lobster. It contains all the sources you will need in one package. Use this package on its own."
+            "description": "Express provider for Syncler by Lobstor. It contains all the sources you will need in one package. Use this package on its own."
         }
     ],
     "cacheServers": [
