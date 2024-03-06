@@ -1,4 +1,5 @@
-{
+[
+  {
   "name": "Lobstor Speedy",
   "id": "lob.express",
   "version": 2,
@@ -12,3 +13,4 @@
   "url": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobster.json",
   "type": "express"
 }
+]
