@@ -2,7 +2,7 @@
   "_manifest" : {
     "name": "Lobstor",
     "id": "lob.express",
-    "version": "1.01",
+    "version": 1.01,
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobstor.json"
   },
