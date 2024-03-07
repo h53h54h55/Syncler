@@ -8,10 +8,6 @@
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobstor.json",
             "description": "Express provider for Syncler by Lobstor. It contains all the sources you will need in one package. Use this package on its own."
-        },
-        {
-            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobstor.json",
-            "description": "test"
         }
     ],
     "cacheServers": [
