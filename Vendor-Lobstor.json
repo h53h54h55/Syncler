@@ -7,11 +7,11 @@
     "packages": [
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobstor.json",
-            "description": "Express provider for Syncler by Lobstor. It contains all the sources you will need in one package. Use this package on its own."
+            "description": "Our full provider file with over 20 sources. Use this package on its own."
         },
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobster.json",
-            "description": "testing only."
+            "description": "Top 5 most popular providers. Great if speed is your thing!"
         }
     ],
     "cacheServers": [
