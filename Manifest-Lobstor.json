@@ -8,7 +8,7 @@
 {
   "name": "Lobstor test",
   "id": "lob.test",
-  "version": 2,
+  "version": 1,
   "url": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobster.json",
   "type": "express"
 }
