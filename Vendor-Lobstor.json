@@ -19,7 +19,7 @@
     ],
     "defaults": {
         "packages": [
-            "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobstor.json"
+            "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobstor-Full.json"
         ],
         "cacheServer": "cache.bouncy.cc"
     }
