@@ -4,7 +4,7 @@
   "version": 2,
   "url": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobstor.json",
   "type": "express"
-},
+}
 {
   "name": "Lobstor test",
   "id": "lob.test",
