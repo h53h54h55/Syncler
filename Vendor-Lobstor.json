@@ -10,7 +10,7 @@
             "description": "Our full provider file with over 20 sources. Use this package on its own."
         },
         {
-            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobster.json",
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobstor-Starter.json",
             "description": "Top 5 most popular providers. Great if speed is your thing!"
         }
     ],
