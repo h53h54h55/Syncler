@@ -1,0 +1,229 @@
+{
+  "_manifest" : {
+    "name": "Lobstor Starter",
+    "id": "lob.starter",
+    "version": 1,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobster-Starter.json"
+  },
+  "thepiratebayjson": {
+        "name": "PIRATEBAY",
+        "enabled": true,
+        "languages": ["en"],
+        "base_url": "https://apibay.org",
+        "fallback_urls": [],
+        "response_type": "json",
+        "movie": {
+            "query": "/q.php?q={query}&cat=207,202,201",
+            "keywords": "{title} {year}"
+        },
+        "episode": {
+            "query": "/q.php?q={query}&cat=208,205",
+            "keywords": ["{title} {episodeCode}"]
+        },
+        "season": {
+            "query": "/q.php?q={query}&cat=208,205",
+            "keywords": ["{title} {seasonCode}", "{title} season"]
+        },
+        "json_format": {
+            "title": "name",
+            "seeds": "seeders",
+            "peers": "leechers",
+            "size": "size",
+            "hash": "info_hash"
+        },
+        "title_replacement": {
+            "'s": "s",
+            "\"": ""
+        }
+    },
+    "magnetdl": {
+      "name": "MAGNETDL",
+      "enabled": true,
+      "languages": ["en"],
+      "base_url": "https://www.magnetdl.com",
+      "fallback_urls": ["https://torrentquest.com"],
+      "response_type": "text",
+      "separator": "-",
+      "movie": {
+          "query": "/{titleFirstLetter}/{query}/",
+          "keywords": "{title} {year}"
+      },
+      "episode": {
+          "query": "/{titleFirstLetter}/{query}/",
+          "keywords": "{title} {episodeCode}"
+      },
+      "season": {
+          "query": "/{titleFirstLetter}/{query}/",
+          "keywords": ["{title} {seasonCode}", "{title} season"]
+      },
+      "html_parser": {
+          "row": "doc.querySelectorAll('table.download tbody tr:nth-child(odd)')",
+          "title": "row.querySelector('td:nth-child(2) a') ? row.querySelector('td:nth-child(2) a').getAttribute('title') : ''",
+          "peers": "row.querySelector('td:nth-child(8)') ? row.querySelector('td:nth-child(8)').textContent : ''",
+          "seeds": "row.querySelector('td:nth-child(7)') ? row.querySelector('td:nth-child(7)').textContent : ''",
+          "size": "row.querySelector('td:nth-child(6)') ? row.querySelector('td:nth-child(6)').textContent.replace(',','') : ''",
+          "url": "row.querySelector('td:nth-child(1) a') ? row.querySelector('td:nth-child(1) a').getAttribute('href') : ''"
+      },
+      "title_replacement": {
+          "'s": "s",
+          "\"": ""
+      }
+  },
+  "eztv": {
+      "base_url": "https://eztv.to",
+      "enabled": true,
+      "episode": {
+        "keywords": "{title} {episodeCode}",
+        "query": "/search/{query}"
+      },
+      "fallback_urls": [
+        "https://eztv.re",
+        "https://eztv.ag",
+        "https://eztv.it",
+        "https://eztv.ch",
+        "https://eztv.unblocked.llc",
+        "https://eztv.unblocker.cc"
+      ],
+      "html_parser": {
+        "peers": "row.querySelector('td:nth-child(6)').textContent",
+        "row": "doc.querySelectorAll('tr.forum_header_border')",
+        "seeds": "row.querySelector('td:nth-child(6)').textContent",
+        "size": "row.querySelector('td:nth-child(4)').textContent",
+        "title": "row.querySelector('td:nth-child(2)').textContent",
+        "url": "row.querySelector('td:nth-child(3) a').getAttribute('href')"
+      },
+      "languages": [
+        "en"
+      ],
+      "name": "EZTV",
+      "response_type": "text",
+      "season": {
+        "keywords": "{title} {seasonCode}",
+        "query": "/search/{query}"
+      },
+      "title_replacement": {
+        "\"": "",
+        "'s": "s"
+      }
+    },
+  "_1337x": {
+    "name": "1337",
+    "enabled": true,
+    "languages": [
+      "en"
+    ],
+    "base_url": "https://1337x.to",
+    "fallback_urls": [
+      "https://1337x.st",
+      "https://1337x.is",
+      "https://1337x.am",
+      "https://x1337x.ws",
+      "https://x1337x.eu",
+      "https://x1337x.se",
+      "https://1337x.unblocked.llc",
+      "https://1337x.unblocker.cc",
+      "https://1337x.unblockall.org"
+    ],
+    "response_type": "text",
+    "movie": {
+      "query": "/category-search/{query}/Movies/1/",
+      "keywords": "{title} {year}"
+    },
+    "episode": {
+      "query": "/sort-category-search/{query}/TV/size/desc/1/",
+      "keywords": "{title} {episodeCode}"
+    },
+    "season": {
+      "query": "/sort-category-search/{query}/TV/size/desc/1/",
+      "keywords": [
+        "{title} {seasonCode}",
+        "{title} season"
+      ]
+    },
+    "separator": "+",
+    "html_parser": {
+      "row": "doc.querySelectorAll('tbody > tr')",
+      "title": "row.querySelector('a:nth-child(2)').innerHTML",
+      "peers": "row.querySelector('.leeches').innerHTML",
+      "seeds": "row.querySelector('.seeds').innerHTML",
+      "size": "row.querySelector('tbody > tr .size').textContent.split('B')[0] + 'B'",
+      "url": "row.querySelector('a:nth-child(2)').getAttribute('href')"
+    },
+    "source_is_in_sub_page": true,
+    "title_replacement": {
+      "'s": "s",
+      "\"": ""
+    }
+  },
+  "limetorrents": {
+    "name": "LIMETORRENTS",
+    "enabled": true,
+    "languages": ["en"],
+    "base_url": "https://www.limetorrents.info",
+    "fallback_urls": ["https://www.limetorrents.asia", "https://www.limetorrents.zone"],
+    "response_type": "text",
+    "separator": "-",
+    "movie": {
+        "query": "/search/movies/{query}",
+        "keywords": "{title} {year}"
+    },
+    "episode": {
+        "query": "/search/tv/{query}",
+        "keywords": "{title} {episodeCode}"
+    },
+    "season": {
+        "query": "/search/tv/{query}",
+        "keywords": "{title} {seasonCode}"
+    },
+    "html_parser": {
+        "row": "doc.querySelectorAll('.table2 tbody tr:nth-child(n+2)')",
+        "title": "row.querySelector('.tt-name').textContent",
+        "peers": "row.querySelector('.tdseed').textContent.replace(',','')",
+        "seeds": "row.querySelector('.tdleech').textContent.replace(',','')",
+        "size": "row.querySelector('.tdnormal:nth-child(3)').textContent",
+        "url": "row.querySelector('.tt-name a:nth-child(2)').getAttribute('href')"
+    },
+    "source_is_in_sub_page": true,
+    "title_replacement": {
+        ".": "",
+        ":": "",
+        "'": "",
+        "&": ""
+    }
+  },
+  "kickass": {
+    "name": "KICKASS",
+    "enabled": true,
+    "languages": ["en"],
+    "base_url": "https://thekat.app",
+    "fallback_urls": ["https://kat.li", "https://thekat.info", "https://kickass.cm", "https://kat.how", "https://kickass.vc", "https://kickass2.biz", "https://kickass2.st"],
+    "response_type": "text",
+    "movie": {
+        "query": "/usearch/{query}%20category:movies/",
+        "keywords": "{title} {year}"
+    },
+    "episode": {
+        "query": "/usearch/{query}%20category:tv/",
+        "keywords": "{title} {episodeCode}"
+    },
+    "season": {
+        "query": "/usearch/{query}%20category:tv/",
+        "keywords": ["{title} {seasonCode}", "{title} season"]
+    },
+    "html_parser": {
+        "row": "doc.querySelectorAll('table:nth-child(2) tbody tr:not(.firstr)')",
+        "title": "row.querySelector('.cellMainLink').textContent",
+        "peers": "row.querySelectorAll('td')[4].textContent",
+        "seeds": "row.querySelectorAll('td')[3].textContent",
+        "size": "row.querySelector('.nobr').textContent",
+        "url": "decodeURIComponent(row.querySelectorAll('a')[1].getAttribute('href').match(/magnet(.*)/)[0])"
+    },
+    "title_replacement": {
+        ".": "",
+        ":": "",
+        "'": "",
+        "&": ""
+    }
+  }
+}
