@@ -1,10 +1,10 @@
 {
   "_manifest" : {
-    "name": "Lobstor",
-    "id": "lob.express",
+    "name": "Full Lobstor Dinner",
+    "id": "lob.full",
     "version": 2,
     "classPath": "",
-    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobstor.json"
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobstor-Full.json"
   },
   "thepiratebayjson": {
         "name": "PIRATEBAY",
