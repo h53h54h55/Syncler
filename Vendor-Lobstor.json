@@ -3,7 +3,7 @@
     "description": "List Of the Best Syncler TORrents (v1.1)",
     "tutorial": "https://raw.githubusercontent.com/h53h54h55/Syncler",
     "support": "https://raw.githubusercontent.com/h53h54h55/Syncler",
-    "website": "https://www.reddit.com/r/synclervendors/comments/1b87sh4/lobstor_file_change_log",
+    "website": "https://www.reddit.com/r/synclervendors",
     "packages": [
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobstor.json",
