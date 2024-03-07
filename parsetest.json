@@ -1,0 +1,47 @@
+{
+  "_manifest" : {
+    "name": "Lobster - 0.01",
+    "id": "lob.test",
+    "version": 1.0,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobster1.0.json"
+  },
+    "yts": {
+        "name": "Lobster-YTS",
+        "enabled": true,
+        "languages": [
+            "en"
+        ],
+        "base_url": "https://yts.mx",
+        "fallback_urls": [
+            "https://yts.pm",
+            "https://yts.unblocked.lat"
+        ],
+        "response_type": "json",
+        "trust_results": true,
+        "movie": {
+            "query": "/api/v2/list_movies.json?query_term={query}&sort_by=seeds&order_by=desc",
+            "keywords": "{imdbId}"
+        },
+        "json_format": {
+            "results": "data.movies",
+            "sub_results": "torrents",
+            "url": "magnet:?xt=urn:btih:{hash}&tr=http://track.one:1234/announce&tr=udp://track.two:80",
+            "title": "title_long",
+            "seeds": "seeds",
+            "peers": "peers",
+            "size": "size",
+            "quality": "quality",
+            "hash": "hash"
+        },
+        "title_replacement": {
+            ".": "",
+            ":": "",
+            "'": "",
+            "&": "",
+            "\"": "",
+            "*": ""
+        }
+  }
+}
+
