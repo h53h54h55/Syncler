@@ -1,17 +1,25 @@
 {
     "name": "Lobstor",
     "description": "List Of the Best Syncler TORrents (v1.1)",
-    "tutorial": "https://raw.githubusercontent.com/h53h54h55/Syncler",
-    "support": "https://raw.githubusercontent.com/h53h54h55/Syncler",
+    "tutorial": "https://www.reddit.com/r/synclervendors",
+    "support": "https://www.buymeacoffee.com/synclerlobstor",
     "website": "https://www.reddit.com/r/synclervendors",
     "packages": [
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobstor-Full.json",
-            "description": "The full lobstor dinner!  Gorge yourself on our full provider file with over 20 sources. Use this package on its own."
+            "description": "The full lobstor dinner!  Gorge yourself on our full provider file with over 20 sources. If you like this consider buying a coffee www.buymeacoffee.com/synclerlobstor. Use this package on its own."
         },
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobstor-Starter.json",
-            "description": "A little amuse-bouche of our top 6 most popular providers. Great if speed is your thing! Use this package on its own."
+            "description": "A little amuse-bouche of our top 6 most popular providers. Great if you are in a hurry and just need a snack! Use this package on its own."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobstor-Sushi.json",
+            "description": "Asian inspired twist on our full dinner package.  Querying Anime content from all your favorites PLUS additional Anime content from specialist sources. Use this package on its own."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobstor-Bisque.json",
+            "description": "Classic French.  A generous serving of our full dinner package filtered for French language titles with a garnish of specific French sources on top.  Use this package on its own - NOTE: French filtering is not yet a feature of Syncler but when it is this file is configured to support the feature"
         }
     ],
     "cacheServers": [
