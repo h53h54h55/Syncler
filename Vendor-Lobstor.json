@@ -23,11 +23,11 @@
         },
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobstor-SideDish-No1.json",
-            "description": "On the side a single portion of Pirate Bay.  This is an expanded search of all mirrors and fallback sites.  Scoff this on its own or mix it with other side dishes."
+            "description": "On the side a single portion of Pirate Bay.  Enjoy this on its own or mix it with other side dishes."
         },
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobstor-SideDish-No2.json",
-            "description": "On the side a single portion of Magnet DL.  This is an expanded search of all mirrors and fallback sites.  Scoff this on its own or mix it with other side dishes."
+            "description": "On the side a single portion of Magnet DL.  Scoff this on its own or mix it with other side dishes."
         }
     ],
     "cacheServers": [
