@@ -19,7 +19,7 @@
         },
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobstor-Bisque.json",
-            "description": "Classic French.  A generous serving of our full dinner package filtered for French language titles with a garnish of specific French sources on top.  Use this package on its own - NOTE: French filtering is not yet a feature of Syncler but when it is this file is configured to support the feature"
+            "description": "Classic French.  A generous serving of our full dinner package filtered for French language titles with a garnish of specific French sources on top.  Use this package on its own"
         }
     ],
     "cacheServers": [
