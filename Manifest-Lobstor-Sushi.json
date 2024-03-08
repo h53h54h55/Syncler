@@ -1,0 +1,7 @@
+{
+  "name": "Lobster Sushi",
+  "id": "lob.sushi",
+  "version": 1,
+  "url": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobstor-Sushi.json",
+  "type": "express"
+}
