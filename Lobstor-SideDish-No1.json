@@ -1,0 +1,508 @@
+{
+  "_manifest" : {
+    "name": "Lobster SideDish No 1",
+    "id": "lob.No1",
+    "version": 1,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobstor-SideDish-No1.json"
+  },
+  "thepiratebayjson": {
+        "name": "PIRATEBAY1",
+        "enabled": true,
+        "languages": ["en"],
+        "base_url": "https://apibay.org",
+        "fallback_urls": [],
+        "response_type": "json",
+        "movie": {
+            "query": "/q.php?q={query}&cat=207,202,201",
+            "keywords": "{title} {year}"
+        },
+        "episode": {
+            "query": "/q.php?q={query}&cat=208,205",
+            "keywords": ["{title} {episodeCode}"]
+        },
+        "season": {
+            "query": "/q.php?q={query}&cat=208,205",
+            "keywords": ["{title} {seasonCode}", "{title} season"]
+        },
+        "json_format": {
+            "title": "name",
+            "seeds": "seeders",
+            "peers": "leechers",
+            "size": "size",
+            "hash": "info_hash"
+        },
+        "title_replacement": {
+            "'s": "s",
+            "\"": ""
+        }
+  },
+  "thepiratebaytext1": {
+      "base_url": "https://pirateproxylive.org",
+      "enabled": true,
+      "episode": {
+        "keywords": [
+          "{title} {episodeCode}",
+          "{title} {season}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "fallback_urls": [],
+      "html_parser": {
+        "peers": "row.querySelector('td:nth-child(4)') ? row.querySelector('td:nth-child(4)').textContent : ''",
+        "row": "doc.querySelectorAll('tbody tr')",
+        "seeds": "row.querySelector('td:nth-child(3)') ? row.querySelector('td:nth-child(3)').textContent : ''",
+        "size": "row.querySelector('font') ? row.querySelector('font').textContent.split(',')[1].replace(/size/i,'') : ''",
+        "title": "row.querySelector('div') ? row.querySelector('div').textContent : ''",
+        "url": "row.querySelector('td:nth-child(2) a:nth-child(2)') ? row.querySelector('td:nth-child(2) a:nth-child(2)').getAttribute('href') : ''"
+      },
+      "languages": [
+        "en"
+      ],
+      "movie": {
+        "keywords": "{title} {year}",
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "name": "PIRATEBAY2",
+      "response_type": "text",
+      "season": {
+        "keywords": [
+          "{title} {seasonCode}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "title_replacement": {
+        "\"": "",
+        "'s": "s"
+    }
+  },
+ "thepiratebaytext2": {
+      "base_url": "https://pirateproxy.live,
+      "enabled": true,
+      "episode": {
+        "keywords": [
+          "{title} {episodeCode}",
+          "{title} {season}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "fallback_urls": [],
+      "html_parser": {
+        "peers": "row.querySelector('td:nth-child(4)') ? row.querySelector('td:nth-child(4)').textContent : ''",
+        "row": "doc.querySelectorAll('tbody tr')",
+        "seeds": "row.querySelector('td:nth-child(3)') ? row.querySelector('td:nth-child(3)').textContent : ''",
+        "size": "row.querySelector('font') ? row.querySelector('font').textContent.split(',')[1].replace(/size/i,'') : ''",
+        "title": "row.querySelector('div') ? row.querySelector('div').textContent : ''",
+        "url": "row.querySelector('td:nth-child(2) a:nth-child(2)') ? row.querySelector('td:nth-child(2) a:nth-child(2)').getAttribute('href') : ''"
+      },
+      "languages": [
+        "en"
+      ],
+      "movie": {
+        "keywords": "{title} {year}",
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "name": "PIRATEBAY3",
+      "response_type": "text",
+      "season": {
+        "keywords": [
+          "{title} {seasonCode}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "title_replacement": {
+        "\"": "",
+        "'s": "s"
+    }
+  },
+ "thepiratebaytext3": {
+      "base_url": "https://thepiratebay.party",
+      "enabled": true,
+      "episode": {
+        "keywords": [
+          "{title} {episodeCode}",
+          "{title} {season}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "fallback_urls": [],
+      "html_parser": {
+        "peers": "row.querySelector('td:nth-child(4)') ? row.querySelector('td:nth-child(4)').textContent : ''",
+        "row": "doc.querySelectorAll('tbody tr')",
+        "seeds": "row.querySelector('td:nth-child(3)') ? row.querySelector('td:nth-child(3)').textContent : ''",
+        "size": "row.querySelector('font') ? row.querySelector('font').textContent.split(',')[1].replace(/size/i,'') : ''",
+        "title": "row.querySelector('div') ? row.querySelector('div').textContent : ''",
+        "url": "row.querySelector('td:nth-child(2) a:nth-child(2)') ? row.querySelector('td:nth-child(2) a:nth-child(2)').getAttribute('href') : ''"
+      },
+      "languages": [
+        "en"
+      ],
+      "movie": {
+        "keywords": "{title} {year}",
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "name": "PIRATEBAY4",
+      "response_type": "text",
+      "season": {
+        "keywords": [
+          "{title} {seasonCode}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "title_replacement": {
+        "\"": "",
+        "'s": "s"
+    }
+  }
+  "thepiratebaytext4": {
+      "base_url": "https://thepiratebay.org",
+      "enabled": true,
+      "episode": {
+        "keywords": [
+          "{title} {episodeCode}",
+          "{title} {season}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "fallback_urls": [],
+      "html_parser": {
+        "peers": "row.querySelector('td:nth-child(4)') ? row.querySelector('td:nth-child(4)').textContent : ''",
+        "row": "doc.querySelectorAll('tbody tr')",
+        "seeds": "row.querySelector('td:nth-child(3)') ? row.querySelector('td:nth-child(3)').textContent : ''",
+        "size": "row.querySelector('font') ? row.querySelector('font').textContent.split(',')[1].replace(/size/i,'') : ''",
+        "title": "row.querySelector('div') ? row.querySelector('div').textContent : ''",
+        "url": "row.querySelector('td:nth-child(2) a:nth-child(2)') ? row.querySelector('td:nth-child(2) a:nth-child(2)').getAttribute('href') : ''"
+      },
+      "languages": [
+        "en"
+      ],
+      "movie": {
+        "keywords": "{title} {year}",
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "name": "PIRATEBAY5",
+      "response_type": "text",
+      "season": {
+        "keywords": [
+          "{title} {seasonCode}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "title_replacement": {
+        "\"": "",
+        "'s": "s"
+    }
+  },
+ "thepiratebaytext5": {
+      "base_url": "https://thepiratebay.fun",
+      "enabled": true,
+      "episode": {
+        "keywords": [
+          "{title} {episodeCode}",
+          "{title} {season}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "fallback_urls": [],
+      "html_parser": {
+        "peers": "row.querySelector('td:nth-child(4)') ? row.querySelector('td:nth-child(4)').textContent : ''",
+        "row": "doc.querySelectorAll('tbody tr')",
+        "seeds": "row.querySelector('td:nth-child(3)') ? row.querySelector('td:nth-child(3)').textContent : ''",
+        "size": "row.querySelector('font') ? row.querySelector('font').textContent.split(',')[1].replace(/size/i,'') : ''",
+        "title": "row.querySelector('div') ? row.querySelector('div').textContent : ''",
+        "url": "row.querySelector('td:nth-child(2) a:nth-child(2)') ? row.querySelector('td:nth-child(2) a:nth-child(2)').getAttribute('href') : ''"
+      },
+      "languages": [
+        "en"
+      ],
+      "movie": {
+        "keywords": "{title} {year}",
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "name": "PIRATEBAY6",
+      "response_type": "text",
+      "season": {
+        "keywords": [
+          "{title} {seasonCode}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "title_replacement": {
+        "\"": "",
+        "'s": "s"
+    }
+  },
+ "thepiratebaytext6": {
+      "base_url": "https://thepiratebay.asia",
+      "enabled": true,
+      "episode": {
+        "keywords": [
+          "{title} {episodeCode}",
+          "{title} {season}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "fallback_urls": [],
+      "html_parser": {
+        "peers": "row.querySelector('td:nth-child(4)') ? row.querySelector('td:nth-child(4)').textContent : ''",
+        "row": "doc.querySelectorAll('tbody tr')",
+        "seeds": "row.querySelector('td:nth-child(3)') ? row.querySelector('td:nth-child(3)').textContent : ''",
+        "size": "row.querySelector('font') ? row.querySelector('font').textContent.split(',')[1].replace(/size/i,'') : ''",
+        "title": "row.querySelector('div') ? row.querySelector('div').textContent : ''",
+        "url": "row.querySelector('td:nth-child(2) a:nth-child(2)') ? row.querySelector('td:nth-child(2) a:nth-child(2)').getAttribute('href') : ''"
+      },
+      "languages": [
+        "en"
+      ],
+      "movie": {
+        "keywords": "{title} {year}",
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "name": "PIRATEBAY7",
+      "response_type": "text",
+      "season": {
+        "keywords": [
+          "{title} {seasonCode}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "title_replacement": {
+        "\"": "",
+        "'s": "s"
+    }
+  },
+  "thepiratebaytext7": {
+      "base_url": "https://tpb.party",
+      "enabled": true,
+      "episode": {
+        "keywords": [
+          "{title} {episodeCode}",
+          "{title} {season}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "fallback_urls": [],
+      "html_parser": {
+        "peers": "row.querySelector('td:nth-child(4)') ? row.querySelector('td:nth-child(4)').textContent : ''",
+        "row": "doc.querySelectorAll('tbody tr')",
+        "seeds": "row.querySelector('td:nth-child(3)') ? row.querySelector('td:nth-child(3)').textContent : ''",
+        "size": "row.querySelector('font') ? row.querySelector('font').textContent.split(',')[1].replace(/size/i,'') : ''",
+        "title": "row.querySelector('div') ? row.querySelector('div').textContent : ''",
+        "url": "row.querySelector('td:nth-child(2) a:nth-child(2)') ? row.querySelector('td:nth-child(2) a:nth-child(2)').getAttribute('href') : ''"
+      },
+      "languages": [
+        "en"
+      ],
+      "movie": {
+        "keywords": "{title} {year}",
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "name": "PIRATEBAY8",
+      "response_type": "text",
+      "season": {
+        "keywords": [
+          "{title} {seasonCode}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "title_replacement": {
+        "\"": "",
+        "'s": "s"
+    }
+  },
+ "thepiratebaytext8": {
+      "base_url": "https://thepiratebay3.org",
+      "enabled": true,
+      "episode": {
+        "keywords": [
+          "{title} {episodeCode}",
+          "{title} {season}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "fallback_urls": [],
+      "html_parser": {
+        "peers": "row.querySelector('td:nth-child(4)') ? row.querySelector('td:nth-child(4)').textContent : ''",
+        "row": "doc.querySelectorAll('tbody tr')",
+        "seeds": "row.querySelector('td:nth-child(3)') ? row.querySelector('td:nth-child(3)').textContent : ''",
+        "size": "row.querySelector('font') ? row.querySelector('font').textContent.split(',')[1].replace(/size/i,'') : ''",
+        "title": "row.querySelector('div') ? row.querySelector('div').textContent : ''",
+        "url": "row.querySelector('td:nth-child(2) a:nth-child(2)') ? row.querySelector('td:nth-child(2) a:nth-child(2)').getAttribute('href') : ''"
+      },
+      "languages": [
+        "en"
+      ],
+      "movie": {
+        "keywords": "{title} {year}",
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "name": "PIRATEBAY9",
+      "response_type": "text",
+      "season": {
+        "keywords": [
+          "{title} {seasonCode}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "title_replacement": {
+        "\"": "",
+        "'s": "s"
+    }
+  },
+ "thepiratebaytext9": {
+      "base_url": "https://thepiratebayz.org",
+      "enabled": true,
+      "episode": {
+        "keywords": [
+          "{title} {episodeCode}",
+          "{title} {season}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "fallback_urls": [],
+      "html_parser": {
+        "peers": "row.querySelector('td:nth-child(4)') ? row.querySelector('td:nth-child(4)').textContent : ''",
+        "row": "doc.querySelectorAll('tbody tr')",
+        "seeds": "row.querySelector('td:nth-child(3)') ? row.querySelector('td:nth-child(3)').textContent : ''",
+        "size": "row.querySelector('font') ? row.querySelector('font').textContent.split(',')[1].replace(/size/i,'') : ''",
+        "title": "row.querySelector('div') ? row.querySelector('div').textContent : ''",
+        "url": "row.querySelector('td:nth-child(2) a:nth-child(2)') ? row.querySelector('td:nth-child(2) a:nth-child(2)').getAttribute('href') : ''"
+      },
+      "languages": [
+        "en"
+      ],
+      "movie": {
+        "keywords": "{title} {year}",
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "name": "PIRATEBAY10",
+      "response_type": "text",
+      "season": {
+        "keywords": [
+          "{title} {seasonCode}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "title_replacement": {
+        "\"": "",
+        "'s": "s"
+    }
+  }
+  "thepiratebaytext10": {
+      "base_url": "https://thehiddenbay.com",
+      "enabled": true,
+      "episode": {
+        "keywords": [
+          "{title} {episodeCode}",
+          "{title} {season}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "fallback_urls": [],
+      "html_parser": {
+        "peers": "row.querySelector('td:nth-child(4)') ? row.querySelector('td:nth-child(4)').textContent : ''",
+        "row": "doc.querySelectorAll('tbody tr')",
+        "seeds": "row.querySelector('td:nth-child(3)') ? row.querySelector('td:nth-child(3)').textContent : ''",
+        "size": "row.querySelector('font') ? row.querySelector('font').textContent.split(',')[1].replace(/size/i,'') : ''",
+        "title": "row.querySelector('div') ? row.querySelector('div').textContent : ''",
+        "url": "row.querySelector('td:nth-child(2) a:nth-child(2)') ? row.querySelector('td:nth-child(2) a:nth-child(2)').getAttribute('href') : ''"
+      },
+      "languages": [
+        "en"
+      ],
+      "movie": {
+        "keywords": "{title} {year}",
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "name": "PIRATEBAY11",
+      "response_type": "text",
+      "season": {
+        "keywords": [
+          "{title} {seasonCode}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "title_replacement": {
+        "\"": "",
+        "'s": "s"
+    }
+  },
+ "thepiratebaytext11": {
+      "base_url": "https://piratebay.live",
+      "enabled": true,
+      "episode": {
+        "keywords": [
+          "{title} {episodeCode}",
+          "{title} {season}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "fallback_urls": [],
+      "html_parser": {
+        "peers": "row.querySelector('td:nth-child(4)') ? row.querySelector('td:nth-child(4)').textContent : ''",
+        "row": "doc.querySelectorAll('tbody tr')",
+        "seeds": "row.querySelector('td:nth-child(3)') ? row.querySelector('td:nth-child(3)').textContent : ''",
+        "size": "row.querySelector('font') ? row.querySelector('font').textContent.split(',')[1].replace(/size/i,'') : ''",
+        "title": "row.querySelector('div') ? row.querySelector('div').textContent : ''",
+        "url": "row.querySelector('td:nth-child(2) a:nth-child(2)') ? row.querySelector('td:nth-child(2) a:nth-child(2)').getAttribute('href') : ''"
+      },
+      "languages": [
+        "en"
+      ],
+      "movie": {
+        "keywords": "{title} {year}",
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "name": "PIRATEBAY12",
+      "response_type": "text",
+      "season": {
+        "keywords": [
+          "{title} {seasonCode}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "title_replacement": {
+        "\"": "",
+        "'s": "s"
+    }
+  },
+ "thepiratebaytext12": {
+      "base_url": "https://thepiratebay.zone",
+      "enabled": true,
+      "episode": {
+        "keywords": [
+          "{title} {episodeCode}",
+          "{title} {season}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "fallback_urls": [],
+      "html_parser": {
+        "peers": "row.querySelector('td:nth-child(4)') ? row.querySelector('td:nth-child(4)').textContent : ''",
+        "row": "doc.querySelectorAll('tbody tr')",
+        "seeds": "row.querySelector('td:nth-child(3)') ? row.querySelector('td:nth-child(3)').textContent : ''",
+        "size": "row.querySelector('font') ? row.querySelector('font').textContent.split(',')[1].replace(/size/i,'') : ''",
+        "title": "row.querySelector('div') ? row.querySelector('div').textContent : ''",
+        "url": "row.querySelector('td:nth-child(2) a:nth-child(2)') ? row.querySelector('td:nth-child(2) a:nth-child(2)').getAttribute('href') : ''"
+      },
+      "languages": [
+        "en"
+      ],
+      "movie": {
+        "keywords": "{title} {year}",
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "name": "PIRATEBAY13",
+      "response_type": "text",
+      "season": {
+        "keywords": [
+          "{title} {seasonCode}"
+        ],
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
+      },
+      "title_replacement": {
+        "\"": "",
+        "'s": "s"
+    }
+  }
+}
