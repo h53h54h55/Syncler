@@ -14,12 +14,12 @@
             "description": "A little amuse-bouche of our top 6 most popular providers. Great if you are in a hurry and just need a snack! Use this package on its own."
         },
         {
-            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobstor-Sushi.json",
-            "description": "Asian inspired twist on our full dinner package.  Querying Anime content from all your favorites PLUS additional Anime content from specialist sources. Use this package on its own."
-        },
-        {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobstor-Bisque.json",
             "description": "Classic French.  A generous serving of our full dinner package filtered for French language titles with a garnish of specific French sources on top.  Use this package on its own"
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Manifest-Lobstor-Sushi.json",
+            "description": "Asian inspired twist on our full dinner package.  Querying Anime content from all your favorites PLUS additional Anime content from specialist sources. Use this package on its own."
         }
     ],
     "cacheServers": [
