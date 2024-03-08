@@ -6,12 +6,12 @@
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobstor-SideDish-No2.json"
   },
-    "magnetdl1": {
-      "name": "MAGNETDL1",
+     "magnetdl": {
+      "name": "MAGNETDL",
       "enabled": true,
       "languages": ["en"],
       "base_url": "https://www.magnetdl.com",
-      "fallback_urls": [],
+      "fallback_urls": ["https://torrentquest.com"],
       "response_type": "text",
       "separator": "-",
       "movie": {
@@ -37,39 +37,6 @@
       "title_replacement": {
           "'s": "s",
           "\"": ""
-    }
-  }, 
- "magnetdl2": {
-      "name": "MAGNETDL2",
-      "enabled": true,
-      "languages": ["en"],
-      "base_url": "https://torrentquest.com",
-      "fallback_urls": [],
-      "response_type": "text",
-      "separator": "-",
-      "movie": {
-          "query": "/{titleFirstLetter}/{query}/",
-          "keywords": "{title} {year}"
-      },
-      "episode": {
-          "query": "/{titleFirstLetter}/{query}/",
-          "keywords": "{title} {episodeCode}"
-      },
-      "season": {
-          "query": "/{titleFirstLetter}/{query}/",
-          "keywords": ["{title} {seasonCode}", "{title} season"]
-      },
-      "html_parser": {
-          "row": "doc.querySelectorAll('table.download tbody tr:nth-child(odd)')",
-          "title": "row.querySelector('td:nth-child(2) a') ? row.querySelector('td:nth-child(2) a').getAttribute('title') : ''",
-          "peers": "row.querySelector('td:nth-child(8)') ? row.querySelector('td:nth-child(8)').textContent : ''",
-          "seeds": "row.querySelector('td:nth-child(7)') ? row.querySelector('td:nth-child(7)').textContent : ''",
-          "size": "row.querySelector('td:nth-child(6)') ? row.querySelector('td:nth-child(6)').textContent.replace(',','') : ''",
-          "url": "row.querySelector('td:nth-child(1) a') ? row.querySelector('td:nth-child(1) a').getAttribute('href') : ''"
-      },
-      "title_replacement": {
-          "'s": "s",
-          "\"": ""
-    }
+      }
   }
 }
