@@ -76,8 +76,8 @@
         "'s": "s"
     }
   },
- "thepiratebaytext2": {
-      "base_url": "https://pirateproxy.live,
+  "thepiratebaytext2": {
+      "base_url": "https://pirateproxy.live",
       "enabled": true,
       "episode": {
         "keywords": [
@@ -115,7 +115,7 @@
         "'s": "s"
     }
   },
- "thepiratebaytext3": {
+  "thepiratebaytext3": {
       "base_url": "https://thepiratebay.party",
       "enabled": true,
       "episode": {
