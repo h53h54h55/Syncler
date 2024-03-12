@@ -1,7 +1,7 @@
 {
   "name": "Full Lobstor Dinner",
   "id": "lob.full",
-  "version": 1.1,
+  "version": 1,
   "url": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobstor-Full.json",
   "type": "express"
 }
