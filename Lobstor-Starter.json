@@ -1,12 +1,12 @@
 {
   "_manifest" : {
     "name": "Lobstor Starter",
-    "id": "lob.starter",
+    "id": "lob.starter-v1.1",
     "version": 1,
     "classPath": "",
-    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobstor-Starter.json"
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobster-Starter.json"
   },
-  "thepiratebayjson": {
+ "thepiratebayjson": {
         "name": "PIRATEBAY",
         "enabled": true,
         "languages": ["en"],
@@ -23,7 +23,12 @@
         },
         "season": {
             "query": "/q.php?q={query}&cat=208,205",
-            "keywords": ["{title} {seasonCode}", "{title} season"]
+            "keywords": [
+            "{title} {seasonCode}",
+            "{title} season",
+            "{title} {year} {seasonCode}",
+            "{title} {year} season"
+        ]
         },
         "json_format": {
             "title": "name",
@@ -71,7 +76,7 @@
       }
   },
   "eztv": {
-      "base_url": "https://eztv.to",
+      "base_url": "https://eztvx.to",
       "enabled": true,
       "episode": {
         "keywords": "{title} {episodeCode}",
@@ -81,9 +86,7 @@
         "https://eztv.re",
         "https://eztv.ag",
         "https://eztv.it",
-        "https://eztv.ch",
-        "https://eztv.unblocked.llc",
-        "https://eztv.unblocker.cc"
+        "https://eztv.ch"
       ],
       "html_parser": {
         "peers": "row.querySelector('td:nth-child(6)').textContent",
@@ -116,14 +119,10 @@
     "base_url": "https://1337x.to",
     "fallback_urls": [
       "https://1337x.st",
-      "https://1337x.is",
       "https://1337x.am",
       "https://x1337x.ws",
       "https://x1337x.eu",
-      "https://x1337x.se",
-      "https://1337x.unblocked.llc",
-      "https://1337x.unblocker.cc",
-      "https://1337x.unblockall.org"
+      "https://x1337x.se"
     ],
     "response_type": "text",
     "movie": {
@@ -156,12 +155,12 @@
       "\"": ""
     }
   },
-  "limetorrents": {
+ "limetorrents": {
     "name": "LIMETORRENTS",
     "enabled": true,
     "languages": ["en"],
     "base_url": "https://www.limetorrents.info",
-    "fallback_urls": ["https://www.limetorrents.asia", "https://www.limetorrents.zone"],
+    "fallback_urls": ["https://www.limetorrents.asia"],
     "response_type": "text",
     "separator": "-",
     "movie": {
