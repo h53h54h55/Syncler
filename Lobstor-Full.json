@@ -6,7 +6,7 @@
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobstor-Full.json"
   },
-  "thepiratebayjson": {
+   "thepiratebayjson": {
         "name": "PIRATEBAY",
         "enabled": true,
         "languages": ["en"],
