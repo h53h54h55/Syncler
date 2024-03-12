@@ -1,6 +1,6 @@
 {
   "name": "Lobstor Starter",
-  "id": "lob.starter",
+  "id": "lob.starter-v1.1",
   "version": 1,
   "url": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobstor-Starter.json",
   "type": "express"
