@@ -1,12 +1,12 @@
 {
   "_manifest" : {
-    "name": "Lobstor SideDish No 1",
-    "id": "lob.No1",
+    "name": "Lobster SideDish No 1",
+    "id": "lob.No1-v1.1",
     "version": 1,
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobstor-SideDish-No1.json"
   },
-  "thepiratebayjson": {
+ "thepiratebayjson": {
         "name": "PIRATEBAY",
         "enabled": true,
         "languages": ["en"],
@@ -23,7 +23,12 @@
         },
         "season": {
             "query": "/q.php?q={query}&cat=208,205",
-            "keywords": ["{title} {seasonCode}", "{title} season"]
+            "keywords": [
+            "{title} {seasonCode}",
+            "{title} season",
+            "{title} {year} {seasonCode}",
+            "{title} {year} season"
+        ]
         },
         "json_format": {
             "title": "name",
@@ -38,15 +43,10 @@
         }
     },
   "thepiratebaytext": {
-      "base_url": "https://pirateproxylive.org",
+      "name": "PBAY",
       "enabled": true,
-      "episode": {
-        "keywords": [
-          "{title} {episodeCode}",
-          "{title} {season}"
-        ],
-        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
-      },
+      "languages": ["en"],
+      "base_url": "https://pirateproxylive.org",
       "fallback_urls": [
         "https://pirateproxy.live",
         "https://thepiratebay.party",
@@ -55,11 +55,28 @@
         "https://thepiratebay.asia",
         "https://tpb.party",
         "https://thepiratebay3.org",
-        "https://thepiratebayz.org",
         "https://thehiddenbay.com",
         "https://piratebay.live",
         "https://thepiratebay.zone"
       ],
+      "response_type": "text",
+      "movie": {
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99",
+        "keywords": "{title} {year}"   
+      },
+      "episode": {
+        "query": "/s/?q={query}&page=0&&video=on&orderby=99",
+        "keywords": ["{title} {episodeCode}", "{title} {season}"]
+      },
+      "season": {
+      "query": "/s/?q={query}&page=0&&video=on&orderby=99",
+      "keywords": [
+            "{title} {seasonCode}",
+            "{title} season",
+            "{title} {year} {seasonCode}",
+            "{title} {year} season"
+        ]
+      },
       "html_parser": {
         "peers": "row.querySelector('td:nth-child(4)') ? row.querySelector('td:nth-child(4)').textContent : ''",
         "row": "doc.querySelectorAll('tbody tr')",
@@ -67,21 +84,6 @@
         "size": "row.querySelector('font') ? row.querySelector('font').textContent.split(',')[1].replace(/size/i,'') : ''",
         "title": "row.querySelector('div') ? row.querySelector('div').textContent : ''",
         "url": "row.querySelector('td:nth-child(2) a:nth-child(2)') ? row.querySelector('td:nth-child(2) a:nth-child(2)').getAttribute('href') : ''"
-      },
-      "languages": [
-        "en"
-      ],
-      "movie": {
-        "keywords": "{title} {year}",
-        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
-      },
-      "name": "PBAY",
-      "response_type": "text",
-      "season": {
-        "keywords": [
-          "{title} {seasonCode}"
-        ],
-        "query": "/s/?q={query}&page=0&&video=on&orderby=99"
       },
       "title_replacement": {
         "\"": "",
