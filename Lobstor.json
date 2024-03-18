@@ -66,16 +66,13 @@
       },
       "episode": {
         "query": "/s/?q={query}&page=0&&video=on&orderby=99",
-        "keywords": ["{title}", "{title} {episodeCode}", "{title} {season}"]
+        "keywords": ["{title} {episodeCode}", "{title} episode"]
       },
       "season": {
       "query": "/s/?q={query}&page=0&&video=on&orderby=99",
       "keywords": [
-            "{title}",
             "{title} {seasonCode}",
-            "{title} {season}",
-            "{title} {year} {seasonCode}",
-            "{title} {year} {season}"
+            "{title} season"
         ]
       },
       "html_parser": {
