@@ -66,7 +66,7 @@
       },
       "episode": {
         "query": "/s/?q={query}&page=0&&video=on&orderby=99",
-        "keywords": ["{title}", "{title} {episodeCode}", "{title} {season}"]
+        "keywords": ["{title}", "{title} {episodeCode}", "{title} season"]
       },
       "season": {
       "query": "/s/?q={query}&page=0&&video=on&orderby=99",
