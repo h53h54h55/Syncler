@@ -162,11 +162,11 @@
       },
       "episode": {
         "query": "/s/?q={query}&page=0&&video=on&orderby=99",
-        "keywords": ["{title.fr}", "{title.fr} {episodeCode}"]
+        "keywords": ["{title}", "{title} {episodeCode}"]
       },
       "season": {
       "query": "/s/?q={query}&page=0&&video=on&orderby=99",
-      "keywords": ["{title.fr}", "{title.fr} {seasonCode}"]
+      "keywords": ["{title}", "{title} {seasonCode}"]
       },
       "html_parser": {
         "row": "doc.querySelectorAll('tbody tr')",
