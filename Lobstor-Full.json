@@ -1,7 +1,7 @@
 {
   "_manifest" : {
     "name": "Full Lobstor Dinner",
-    "id": "lob.full-v1.1",
+    "id": "lob.full-v1.2",
     "version": 1,
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobstor-Full.json"
@@ -46,8 +46,11 @@
       "name": "PBAY",
       "enabled": true,
       "languages": ["en"],
+      "response_type": "text",
+    
       "base_url": "https://pirateproxylive.org",
       "fallback_urls": [
+        "https://thepiratebay10.xyz",
         "https://pirateproxy.live",
         "https://thepiratebay.party",
         "https://thepiratebay.org",
@@ -59,37 +62,31 @@
         "https://piratebay.live",
         "https://thepiratebay.zone"
       ],
-      "response_type": "text",
       "movie": {
         "query": "/s/?q={query}&page=0&&video=on&orderby=99",
         "keywords": "{title} {year}"   
       },
       "episode": {
         "query": "/s/?q={query}&page=0&&video=on&orderby=99",
-        "keywords": ["{title} {episodeCode}", "{title} {season}"]
+        "keywords": ["{title}", "{title} {episodeCode}"]
       },
       "season": {
       "query": "/s/?q={query}&page=0&&video=on&orderby=99",
-      "keywords": [
-            "{title} {seasonCode}",
-            "{title} season",
-            "{title} {year} {seasonCode}",
-            "{title} {year} season"
-        ]
+      "keywords": ["{title}", "{title} {seasonCode}"]
       },
       "html_parser": {
-        "peers": "row.querySelector('td:nth-child(4)') ? row.querySelector('td:nth-child(4)').textContent : ''",
         "row": "doc.querySelectorAll('tbody tr')",
-        "seeds": "row.querySelector('td:nth-child(3)') ? row.querySelector('td:nth-child(3)').textContent : ''",
-        "size": "row.querySelector('font') ? row.querySelector('font').textContent.split(',')[1].replace(/size/i,'') : ''",
-        "title": "row.querySelector('div') ? row.querySelector('div').textContent : ''",
-        "url": "row.querySelector('td:nth-child(2) a:nth-child(2)') ? row.querySelector('td:nth-child(2) a:nth-child(2)').getAttribute('href') : ''"
+        "peers": "row.querySelector('td:nth-child(7)').textContent",
+        "seeds": "row.querySelector('td:nth-child(6)').textContent",
+        "size": "row.querySelector('td:nth-child(5)').textContent",
+        "title": "row.querySelector('td:nth-child(2)').textContent",
+        "url": "row.querySelector('td:nth-child(4) a').getAttribute('href')"
       },
       "title_replacement": {
         "\"": "",
         "'s": "s"
       }
-    },
+  },
     "magnetdl": {
       "name": "MAGNETDL",
       "enabled": true,
