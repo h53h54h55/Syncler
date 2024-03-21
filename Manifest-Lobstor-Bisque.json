@@ -1,7 +1,7 @@
 {
   "name": "Lobster Bisque",
   "id": "lob.bisque-v1.2",
-  "version": 1.2,
+  "version": 1,
   "url": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobstor-Bisque.json",
   "type": "express"
 }
