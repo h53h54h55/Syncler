@@ -39,7 +39,8 @@
         },
         "title_replacement": {
             "'s": "s",
-            "\"": ""
+            "\"": "",
+            "9-1-1":"911"
         }
     },
   "thepiratebaytext": {
@@ -84,7 +85,8 @@
       },
       "title_replacement": {
         "\"": "",
-        "'s": "s"
+        "'s": "s",
+        "9-1-1":"911"
       }
   },
     "magnetdl": {
