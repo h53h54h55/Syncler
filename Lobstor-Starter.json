@@ -19,16 +19,11 @@
         },
         "episode": {
             "query": "/q.php?q={query}&cat=208,205",
-            "keywords": ["{title} {episodeCode}"]
+            "keywords": ["{title} {episodeCode}","{title} {year} {episodeCode}"]
         },
         "season": {
             "query": "/q.php?q={query}&cat=208,205",
-            "keywords": [
-            "{title} {seasonCode}",
-            "{title} season",
-            "{title} {year} {seasonCode}",
-            "{title} {year} season"
-        ]
+            "keywords": ["{title} {seasonCode}","{title} season","{title} {year} {seasonCode}","{title} {year} season"]
         },
         "json_format": {
             "title": "name",
@@ -56,11 +51,11 @@
       },
       "episode": {
           "query": "/{titleFirstLetter}/{query}/",
-          "keywords": "{title} {episodeCode}"
+          "keywords": ["{title} {episodeCode}","{title} {year} {episodeCode}"]
       },
       "season": {
           "query": "/{titleFirstLetter}/{query}/",
-          "keywords": ["{title} {seasonCode}", "{title} season"]
+          "keywords": ["{title} {seasonCode}","{title} season","{title} {year} {seasonCode}","{title} {year} season"]
       },
       "html_parser": {
           "row": "doc.querySelectorAll('table.download tbody tr:nth-child(odd)')",
@@ -79,7 +74,7 @@
       "base_url": "https://eztvx.to",
       "enabled": true,
       "episode": {
-        "keywords": "{title} {episodeCode}",
+        "keywords": ["{title} {episodeCode}","{title} {year} {episodeCode}"],
         "query": "/search/{query}"
       },
       "fallback_urls": [
@@ -102,7 +97,7 @@
       "name": "EZTV",
       "response_type": "text",
       "season": {
-        "keywords": "{title} {seasonCode}",
+        "keywords": ["{title} {seasonCode}","{title} season","{title} {year} {seasonCode}","{title} {year} season"],
         "query": "/search/{query}"
       },
       "title_replacement": {
@@ -131,14 +126,11 @@
     },
     "episode": {
       "query": "/sort-category-search/{query}/TV/size/desc/1/",
-      "keywords": "{title} {episodeCode}"
+      "keywords": ["{title} {episodeCode}","{title} {year} {episodeCode}"]
     },
     "season": {
       "query": "/sort-category-search/{query}/TV/size/desc/1/",
-      "keywords": [
-        "{title} {seasonCode}",
-        "{title} season"
-      ]
+      "keywords": ["{title} {seasonCode}","{title} season","{title} {year} {seasonCode}","{title} {year} season"]
     },
     "separator": "+",
     "html_parser": {
@@ -169,11 +161,11 @@
     },
     "episode": {
         "query": "/search/tv/{query}",
-        "keywords": "{title} {episodeCode}"
+        "keywords": ["{title} {episodeCode}","{title} {year} {episodeCode}"]
     },
     "season": {
         "query": "/search/tv/{query}",
-        "keywords": "{title} {seasonCode}"
+        "keywords": ["{title} {seasonCode}","{title} season","{title} {year} {seasonCode}","{title} {year} season"]
     },
     "html_parser": {
         "row": "doc.querySelectorAll('.table2 tbody tr:nth-child(n+2)')",
@@ -204,11 +196,11 @@
     },
     "episode": {
         "query": "/usearch/{query}%20category:tv/",
-        "keywords": "{title} {episodeCode}"
+        "keywords": ["{title} {episodeCode}","{title} {year} {episodeCode}"]
     },
     "season": {
         "query": "/usearch/{query}%20category:tv/",
-        "keywords": ["{title} {seasonCode}", "{title} season"]
+        "keywords": ["{title} {seasonCode}","{title} season","{title} {year} {seasonCode}","{title} {year} season"]
     },
     "html_parser": {
         "row": "doc.querySelectorAll('table:nth-child(2) tbody tr:not(.firstr)')",
