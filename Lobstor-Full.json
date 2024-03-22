@@ -19,7 +19,7 @@
         },
         "episode": {
             "query": "/q.php?q={query}&cat=208,205",
-            "keywords": ["{title} {episodeCode}", "{title} {year} {episodeCode}"]
+            "keywords": ["{title} {episodeCode}", "{title} episode", "{title} {year} {episodeCode}", "{title} {year} episode"]
         },
         "season": {
             "query": "/q.php?q={query}&cat=208,205",
