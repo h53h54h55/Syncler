@@ -20,11 +20,11 @@
       },
       "episode": {
           "query": "/{titleFirstLetter}/{query}/",
-          "keywords": "{title} {episodeCode}"
+          "keywords": ["{title} {episodeCode}","{title} {year} {episodeCode}"]
       },
       "season": {
           "query": "/{titleFirstLetter}/{query}/",
-          "keywords": ["{title} {seasonCode}", "{title} season"]
+          "keywords": ["{title} {seasonCode}","{title} season","{title} {year} {seasonCode}","{title} {year} season"]
       },
       "html_parser": {
           "row": "doc.querySelectorAll('table.download tbody tr:nth-child(odd)')",
