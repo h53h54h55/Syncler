@@ -413,7 +413,7 @@
     "enabled": true,
     "languages": ["en"],
     "base_url": "https://thekat.app",
-    "fallback_urls": ["https://kat.li", "https://thekat.info", "https://kickass.cm", "https://kat.how", "https://kickass.vc", "https://kickass2.biz", "https://kickass2.st"],
+    "fallback_urls": ["https://kick4ss.com", "https://kat.li", "https://thekat.info", "https://kickass.cm", "https://kat.how", "https://kickass.vc", "https://kickass2.biz", "https://kickass2.st"],
     "response_type": "text",
     "movie": {
         "query": "/usearch/{query}%20category:movies/",
