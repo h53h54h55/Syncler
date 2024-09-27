@@ -1,8 +1,8 @@
 {
   "_manifest" : {
-    "name": "Lobstor 1.3",
+    "name": "Lobstor 1.3.1",
     "id": "lob.express",
-    "version": 1.3,
+    "version": 1.3.1,
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobstor.json"
   },
@@ -121,6 +121,41 @@
           "\"": ""
       }
   },
+    "torrentquest_primary": {
+        "name": "TorrentQuest",
+        "base_url": "https://torrentquest.com",
+        "response_type": "text",
+        "separator": "-",
+        "movie": {
+            "query": "\/{titleFirstLetter}\/{query}\/size\/desc\/1\/",
+            "keywords": "{title} {year}"
+        },
+        "episode": {
+            "query": "\/{titleFirstLetter}\/{query}\/size\/desc\/1\/",
+            "keywords": "{title} {episodeCode}"
+        },
+        "season": {
+            "query": "\/{titleFirstLetter}\/{query}\/size\/desc\/1\/",
+            "keywords": "{title} {seasonCode}"
+        },
+        "anime": {
+            "query": "\/{titleFirstLetter}\/{query}\/size\/desc\/1\/",
+            "keywords": "{title} {episode}"
+        },
+        "html_parser": {
+            "row": "doc.querySelectorAll('table.download tbody tr:nth-child(odd)')",
+            "title": "row.querySelector('td:nth-child(2) a').getAttribute('title')",
+            "size": "row.querySelector('td:nth-child(6)').textContent",
+            "seeds": "row.querySelector('td:nth-child(7)').textContent",
+            "peers": "row.querySelector('td:nth-child(8)').textContent",
+            "url": "row.querySelector('td:nth-child(1) a').getAttribute('href')"
+        },
+        "time_to_wait_between_each_request_ms": 300,
+        "time_to_wait_on_too_many_request_ms": 5000,
+        "timeout_ms": 8000,
+        "rating": 2,
+        "host_status": "public server"
+    },
   "zooqle": {
     "name": "ZOOQLE",
     "enabled": true,
