@@ -121,7 +121,7 @@
           "\"": ""
       }
   },
-    "torrentquest_primary": {
+    "torrentquest": {
         "name": "TorrentQuest",
         "base_url": "https://torrentquest.com",
         "response_type": "text",
@@ -137,10 +137,6 @@
         "season": {
             "query": "\/{titleFirstLetter}\/{query}\/size\/desc\/1\/",
             "keywords": "{title} {seasonCode}"
-        },
-        "anime": {
-            "query": "\/{titleFirstLetter}\/{query}\/size\/desc\/1\/",
-            "keywords": "{title} {episode}"
         },
         "html_parser": {
             "row": "doc.querySelectorAll('table.download tbody tr:nth-child(odd)')",
