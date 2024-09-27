@@ -1,8 +1,8 @@
 {
   "_manifest" : {
-    "name": "Lobstor 1.31",
+    "name": "Lobstor 1.3",
     "id": "lob.express",
-    "version": 1.31,
+    "version": 1.3,
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobstor.json"
   },
@@ -121,6 +121,41 @@
           "\"": ""
       }
   },
+  "torrentz2": {
+        "name": "TORRENTZ2",
+        "base_url": "https://torrentz2.nz",
+        "response_type": "text",
+        "separator": "+",
+        "movie": {
+            "query": "\/search?q={query}&sort=size&page=3",
+            "keywords": "{title} {year}"
+        },
+        "episode": {
+            "query": "\/search?q={query}&sort=size&page=3",
+            "keywords": "{title} {episodeCode}"
+        },
+        "season": {
+            "query": "\/search?q={query}&sort=size&page=3",
+            "keywords": "{title} {seasonCode}"
+        },
+        "anime": {
+            "query": "\/search?q={query}&sort=size&page=3",
+            "keywords": "{title} {episode}"
+        },
+        "html_parser": {
+            "row": "doc.querySelectorAll('.results dl')",
+            "title": "row.querySelector('dt a').textContent",
+            "size": "row.querySelector('span:nth-child(3)').textContent",
+            "seeds": "row.querySelector('span:nth-child(4)').textContent",
+            "peers": "row.querySelector('span:nth-child(5)').textContent",
+            "url": "row.querySelector('dd span a').getAttribute('href')"
+        },
+        "time_to_wait_between_each_request_ms": 300,
+        "time_to_wait_on_too_many_request_ms": 5000,
+        "timeout_ms": 8000,
+        "rating": 2,
+        "host_status": "public server"
+    },
     "torrentquest": {
         "name": "TORRENTQUEST",
         "base_url": "https://torrentquest.com",
