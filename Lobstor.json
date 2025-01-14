@@ -2,16 +2,14 @@
   "_manifest" : {
     "name": "Lobstor 1.4",
     "id": "lob.express",
-    "version": 1.3,
+    "version": 1.4,
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobstor.json"
   },
     "torrentio": {
     "name": "TORRENTIO",
     "enabled": true,
-    "languages": [
-      "en"
-    ],
+    "languages": ["en"],
     "base_url": "https://torrentio.strem.fun",
     "response_type": "json",
     "movie": {
