@@ -1,10 +1,32 @@
 {
   "_manifest" : {
-    "name": "Lobstor 1.3",
+    "name": "Lobstor 1.4",
     "id": "lob.express",
     "version": 1.3,
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler/main/Lobstor.json"
+  },
+    "torrentio": {
+    "name": "TORRENTIO",
+    "enabled": true,
+    "languages": [
+      "en"
+    ],
+    "base_url": "https://torrentio.strem.fun",
+    "response_type": "json",
+    "movie": {
+      "query": "/stream/movie/{query}.json",
+      "keywords": "{imdbId}"
+    },
+    "episode": {
+      "query": "/stream/series/{query}:{season}:{episode}.json",
+      "keywords": "{showImdbId}"
+    },
+    "json_format": {
+      "results": "streams",
+      "title": "title",
+      "hash": "infoHash"
+    }
   },
   "thepiratebayjson": {
         "name": "PIRATEBAY",
