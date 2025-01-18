@@ -113,7 +113,6 @@
       "enabled": true,
       "languages": ["en"],
       "base_url": "https://www.magnetdl.com",
-      "fallback_urls": ["https://torrentquest.com"],
       "response_type": "text",
       "separator": "-",
       "movie": {
